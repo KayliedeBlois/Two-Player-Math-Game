@@ -1,4 +1,4 @@
-class players
+class Players
 
   attr_accessor :player1, :player2, :player1_life, :player2_life
 
@@ -19,5 +19,13 @@ class players
       self.player2_life -= 1
     end
   end 
+
+  def life_remaining
+    if(self.player1_life == 0 || self.player2_life == 0)
+      return false
+    else 
+      return true
+    end
+  end
 
 end 

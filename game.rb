@@ -1,5 +1,6 @@
 class Game
 
+  attr_reader :player1, :player2
   attr_accessor :player, :player_id
 
   def initialize
@@ -44,5 +45,5 @@ class Game
   def winner 
     puts "#{player} wins!"
   end 
-  
+
 end
